@@ -65,11 +65,10 @@ console.log(total);
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumArray(array){
-	numbers.reduce(function(a, b) {
-  return a + b;
-});
+	return.array.reduce(function(sum, number) {
+  return sum + number;
+},0);
 }
-// Doesn't work
 
 // AVERAGE
 // Level 1) Array of numbers - find the sum and divide it by the number of elements
@@ -120,6 +119,15 @@ return	arrayLength;
 
 var averageLength = averageWordLength(words);
 console.log(averageLength);
+
+
+// 2nd Method
+function averageWordLength (array) {
+	totalLength = array.reduce(function (sum, number) {
+		return sum + number.length;
+	},0)
+}
+
 
 // Unique Arrays
 
